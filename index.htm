@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Editor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="main-box">
+    <div class="my-info">
+      <p>Name: Deepak yadav</p>
+      <p>Email: deepakyadav20322@gmail.com</p>
+    </div>
+
+  <div id="search-box">
+  <div id="search-container">
+    <input type="text" id="search-term" placeholder="Enter your search term">
+    <button id="search-button">Search</button>
+  </div>
+  </div>
+  <div id="results"></div>
+  <div id="editor-container" style="display: none;">
+    <canvas id="image-canvas"></canvas>
+    <div>
+      <button class="shape-btn" id="add-text">Add Text</button>
+      <button class="shape-btn" id="add-rectangle">Add Rectangle</button>
+      <button class="shape-btn" id="add-circle">Add Circle</button>
+      <button class="shape-btn" id="add-triangle">Add Triangle</button>
+      <button class="shape-btn" id="add-polygon">Add Polygon</button>
+    </div>
+    <div class="download-box" >
+      <button class="download-btn" id="download">Download</button>
+    </div>
+  </div>
+</div>
+
+  <!-- Include Fabric.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.5.0/fabric.min.js"></script>
+  <!-- Include latest html2canvas -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+</body>
+</html>
